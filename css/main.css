@@ -1,0 +1,35 @@
+*{
+  box-sizing: border-box;
+  /* reset */
+}
+
+.gallery{
+  max-width: 1280px;
+  /* limit the max width of the gallery */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));  
+  /* layout the images responsively */
+
+  justify-items: center;
+  /* centering the gallery on the page */
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 356px;
+  /* preserve the aspect ratio of each image */
+  
+  border: solid 0.1rem black;
+}
+
+/* making it pretty */
+.card figcaption{
+  font-family: "Gill Sans", sans-serif;
+}
+
+
